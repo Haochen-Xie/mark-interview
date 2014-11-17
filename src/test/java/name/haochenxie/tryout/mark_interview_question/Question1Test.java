@@ -19,12 +19,12 @@ public class Question1Test {
 	
 	@Test
 	public void testGetBottomLeft() {
-		assertEquals(Question1.getBottomLeft(getSampleData()), new Point(-1, 0));
+		assertEquals(new Point(-1, 0), Question1.getBottomLeft(getSampleData()));
 	}
 
 	@Test
 	public void testGetTopRight() {
-		assertEquals(Question1.getTopRight(getSampleData()), new Point(2, 3));
+		assertEquals(new Point(2, 3), Question1.getTopRight(getSampleData()));
 	}
 
 }
