@@ -1,11 +1,17 @@
 package name.haochenxie.tryout.mark_interview_question;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class Question1 {
 
-	public static void main(String[] args) {
+	public static void printPoints(Point[] points) {
+		List<Point> list = Arrays.asList(points);
+		Point bl = getBottomLeft(list);
+		Point tr = getTopRight(list);
 		
+		System.out.println("Bottom-left: " + bl);
+		System.out.println("Top-right: " + tr);
 	}
 	
 	public static Point getBottomLeft(List<Point> points) {
