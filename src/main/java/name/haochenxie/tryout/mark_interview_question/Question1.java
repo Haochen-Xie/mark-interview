@@ -8,9 +8,21 @@ public class Question1 {
 		
 	}
 	
-	// TODO: not implemented
 	public static Point getBottomLeft(List<Point> points) {
-		return null;
+		if (points.size() <= 0)
+			throw new IllegalArgumentException();
+		
+		int x = points.get(0).x;
+		int y = points.get(0).y;
+		
+		for (Point p : points) {
+			if (p.x < x)
+				x = p.x;
+			if (p.y < y)
+				y = p.y;
+		}
+		
+		return new Point(x, y);
 	}
 	
 	// TODO: not implemented
